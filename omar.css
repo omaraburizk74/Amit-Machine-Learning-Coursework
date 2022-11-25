@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgb(26, 24, 22);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 200px;
+    /* text-decoration: none; */
+
+}
+
+.logo {
+    text-decoration: none;
+    /* font-size: 35px; */
+    font-weight: 500;
+    font-size: 1.6em;
+    color: blue;
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 5px 0px 0px 30px;
+    color: blue;
+    ;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: capitalize;
+    /* padding-left: 30px; */
+
+}
+
+.navigation a:hover {
+    color: rgb(167, 25, 207);
+
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    /*مرتبطين ببعض لازم اعمل جيسلاي فليكس الاول وبعدها الاين ايتم */
+    display: flex;
+    align-items: center;
+    background: url("pic/qqq.jpg") no-repeat;
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: rgb(0, 0, 98);
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.main h2 span {
+    display: inline-block;
+    color: rgb(193, 46, 180);
+    font-size: 2.3em;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.main h3 {
+    color: aqua;
+    font-size: 1.9em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.main-botton {
+    text-decoration: none;
+    background-color: rgb(41, 26, 161);
+    ;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    /* عشان يدينا الكيرف الي ف الزرار */
+    border-radius: 15px;
+    margin-bottom: 40px;
+    /* التحول (سرعه التكبير بتاع الزرار) */
+    transition: 0.7s ease;
+}
+
+.main-botton:hover {
+    background-color: blue;
+    /* transform: scale(1.1); */
+    transform: scale(1.1, 1.1);
+
+}
+
+.icins a {
+
+    color: wheat;
+    font-size: 1.7em;
+    padding-right: 30px;
+
+
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: rgb(35, 35, 193);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 40px;
+
+}
+
+.content {
+    /* عشان ييجوا ف النص */
+    display: flex;
+    justify-content: center;
+    /* بيحدد الي هيقفوا جمب بعضهم هيبقوا جمب بعض ولا تحت بعض */
+    flex-direction: row;
+    /* flex-direction: column; */
+
+    /* الاصل بتاعه نوو راب بمعني الكروت هتفضل مساحتها تصغر لو ذودتها  */
+    /* flex-wrap: nowrap; */
+    /* انما راب علطول لو زودتها هتنزل تحنهت عادي  */
+    flex-wrap: wrap;
+}
+
+.card {
+
+    background-color: white;
+    width: 21.25em;
+
+    box-shadow: 0 5px 25px rgb(1 1 1 /15%);
+    /* بيعمل شكل الكيرف ف الحواف */
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    /* دي بتاع سرعه تكبير المربع  */
+    transition: 0.7s ease;
+} 
+
+.card:hover {
+    /* عشان يكبر بمعدل 10 ف الميه الي هي 1 دي الي هي من عشره */
+    transform: scale(1.1);
+
+}
+
+.icon {
+    color: blue;
+    font-size: 8em;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.info {
+    /* عشان نسنطر الكلام ف النص */
+    text-align: center;
+
+}
+
+.info h3 {
+    color: blue;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+
+    background-color: black;
+
+
+}
+
+.projects .content {
+    margin-top: 30px;
+
+}
+
+
+
+
+
+.project-card {
+    background-color: white;
+
+    border: 1px solid white;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+
+}
+
+.project-card:hover .project-image {
+    opacity: 0.8;
+}
+
+.project-image img {
+
+    width: 100%;
+
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: black;
+
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+
+}
+
+.more-details {
+    text-decoration: none;
+    color: blue;
+}
+
+.more-details:hover {
+    color: rgb(167, 25, 207);
+}
+
+
+.contact .icon {
+    font-size: 4.5em;
+
+
+}
+
+.contact .info h3 {
+
+    color: black;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+
+}
+
+.footer {
+    color: white;
+    background-color: black;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+
+.footer-title span {
+
+    color: blue;
+
+}
